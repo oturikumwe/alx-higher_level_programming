@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+raise_exception = __import__('5-raise_exception').raise_exception
 
-def raise_exception():
-    try:
-        raise TypeError("This is a type exception")
-    except TypeError as e:
-        print("Exception:", e)
+try:
+    raise_exception()
+except TypeError as te:
+    print("Exception raised")
