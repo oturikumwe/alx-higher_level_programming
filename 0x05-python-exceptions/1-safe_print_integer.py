@@ -9,3 +9,7 @@ def safe_print_integer(value):
     except (TypeError, ValueError) as e:
         print("Error:", e)
         return False
+
+# Test the function
+print(safe_print_integer(42))  # Should print True
+print(safe_print_integer("hello"))  # Should print False
