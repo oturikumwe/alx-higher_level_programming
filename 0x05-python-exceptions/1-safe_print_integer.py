@@ -7,8 +7,3 @@ def safe_print_integer(value):
         return True
     except(TypeError, ValueError):
         return False
-
-
-# Test the function
-print(safe_print_integer(42))  # Should print True
-print(safe_print_integer("hello"))  # Should print False
